@@ -1,0 +1,198 @@
+.container-padre{
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container-metronome{
+    padding: 50px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 5px 5px;
+    width: 520px;
+    display: flex;
+    margin-bottom: 10px;
+    border: 3px solid;
+
+}
+.container-mic{
+    width: 100%;
+}
+.selector-audio{
+    text-align: center;
+}
+
+.metronome {
+    width: 100%;
+    display: flex;
+    flex-direction: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.bpm-display {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fa545c;
+    font-weight: bold;
+}
+
+.bpm-display .tempo {
+    font-size: 4em;
+}
+
+.tempo-text {
+    font-size: .8em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tempo-settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tempo-settings .adjust-tempo-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tempo-settings .adjust-tempo-btn:hover {
+    background: #fa545c;
+    color: #fff;
+}
+
+.tempo-settings .decrease-tempo {
+    line-height: 25px;
+}
+
+.tempo-settings .increase-tempo {
+    line-height: 32px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 70%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fa545c;
+    cursor: pointer;
+    margin-top: -8px;
+}
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fa545c;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+.controlador{
+    /* border: 1px solid; */
+    padding: 1px;
+    text-align: center;
+    display: block;
+    margin: 0 0 0 40px;
+    width: auto;
+}
+.controlador .start-stop{
+    line-height: 18px;
+}
+
+.start-stop {
+    display: block;
+    width: 150px;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    background: #fa545c;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.start-stop:hover {
+    background: #ff656c;
+}
+
+.measures {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.measures .stepper {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.measures .stepper:hover {
+    background: #ff656c;
+    color: #fff;
+}
+.measures .add-beats {
+    line-height: 18px;
+}
+.measures .subtract-beats{
+    line-height: 18px;
+}
+.beats-per-measure-text {
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.homepage.selector-audio{
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin-top: 15px;
+    border: 1px solid;
+    height: 3vh;
+}
+.duracion{
+    text-align: center;
+}

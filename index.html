@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metronomo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-metronome">
+        <div class="metronome">
+            <div>
+                <div class="bpm-display">
+                    <span class="tempo">140</span>
+                    <span class="bpm">BPM</span>
+                </div>
+                <div class="tempo-text">Nice and steady</div>
+                <div class="tempo-settings">
+                    <div class="adjust-tempo-btn decrease-tempo">-</div>
+                    <input type="range" min="20" max="280" step="1" class="slider">
+                    <div class="adjust-tempo-btn increase-tempo">+</div>
+                </div>
+            </div>
+            <div class="controlador">
+                <button id="start_stop" class="start-stop" >START</button>
+                <div class="measures">
+                    <div class="subtract-beats stepper">-</div>
+                    <div class="measure-count">4</div>
+                    <div class="add-beats stepper">+</div>
+                </div>
+                <span class="beats-per-measure-text">Beats per measure</span>
+                <div>
+                    <p class="duracion" id="duracion">--Duración--</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script-microfono.js"></script>
+    <script src="jquery.dropotron.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+</body>
+</html>
